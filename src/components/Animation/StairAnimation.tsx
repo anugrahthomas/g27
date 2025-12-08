@@ -15,13 +15,13 @@ const StairAnimation = ({ children }: any) => {
     tl.from(".stair", {
       height: 0,
       stagger: {
-        amount: -0.3,
+        amount: 0.3,
       },
     });
     tl.to(".stair", {
       y: "100%",
       stagger: {
-        amount: -0.1,
+        amount: -0.2,
       },
     });
     tl.to(stairRef.current, {
@@ -32,7 +32,7 @@ const StairAnimation = ({ children }: any) => {
     });
     gsap.from(appRef.current, {
         opacity:0,
-        delay:0.8
+        delay:0.7
     })
   }, [location.pathname]);
   return (
